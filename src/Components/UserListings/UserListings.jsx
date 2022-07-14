@@ -8,12 +8,13 @@ export default function UserListings() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/UserListings/" + profile.user._id).then(
-      (res) => {
-        console.log(res);
-        setProducts(res.data);
-      }
-    );
+    Axios.get(
+      "https://ecommerce-mongodb-server.herokuapp.com/UserListings/" +
+        profile.user._id
+    ).then((res) => {
+      console.log(res);
+      setProducts(res.data);
+    });
   }, []);
 
   return (

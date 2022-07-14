@@ -11,7 +11,7 @@ export default function Login() {
   const [message, setMessage] = useState("");
 
   const onLoginClick = () => {
-    Axios.post("http://localhost:3001/Login", {
+    Axios.post("https://ecommerce-mongodb-server.herokuapp.com/Login", {
       email,
       password,
     })

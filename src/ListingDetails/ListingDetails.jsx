@@ -9,7 +9,10 @@ export default function ListingDetails() {
   const location = useLocation();
 
   const onDelete = () => {
-    Axios.delete("http://localhost:3001/delete/" + location.state.id);
+    Axios.delete(
+      "https://ecommerce-mongodb-server.herokuapp.com/delete/" +
+        location.state.id
+    );
     window.location.href = "/";
   };
 

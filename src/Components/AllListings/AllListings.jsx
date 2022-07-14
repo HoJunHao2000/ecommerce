@@ -9,7 +9,9 @@ export default function AllListings() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/AllListings").then((res) => {
+    Axios.get(
+      "https://ecommerce-mongodb-server.herokuapp.com/AllListings"
+    ).then((res) => {
       setProducts(res.data);
     });
   }, []);

@@ -23,7 +23,7 @@ export default function Post() {
       description.length > 0 &&
       contact.length > 0
     ) {
-      Axios.post("http://localhost:3001/Post", {
+      Axios.post("https://ecommerce-mongodb-server.herokuapp.com/Post", {
         itemName,
         price,
         description,

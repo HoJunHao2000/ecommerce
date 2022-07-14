@@ -11,7 +11,7 @@ export default function Register() {
   const createUser = () => {
     if (email.length > 0 && password.length > 0 && username.length > 0) {
       if (password === re_password && read) {
-        Axios.post("http://localhost:3001/Register", {
+        Axios.post("https://ecommerce-mongodb-server.herokuapp.com/Register", {
           username,
           email,
           password,
