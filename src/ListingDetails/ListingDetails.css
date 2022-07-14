@@ -1,0 +1,18 @@
+.SingleProd .card {
+  border: none;
+  overflow: hidden;
+}
+
+.SingleProd .main_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.SingleProd .right-side {
+  position: relative;
+}
